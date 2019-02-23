@@ -12,6 +12,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('/css/fontawesome.min.css') }}" rel="stylesheet">
 
     <!-- Scripts -->
     <script>
@@ -36,6 +37,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
+                    <i class="fas fa-bus"></i>
                         {{ config('app.name', 'Laravel') }}
                     </a>
                 </div>
@@ -55,7 +57,8 @@
                         @else
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                <i class="fas fa-user-circle"></i>
+                                {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
                                 <ul class="dropdown-menu" role="menu">

@@ -14,10 +14,22 @@
                 </div>
 
                 <div class="panel-body">
-                    <p>Carline - {{ $bookuser->carline }}</p>
-                    <i>Destination - {{ $bookuser->destination }}</i><br>
-                    <b>Seats Number - {{ $bookuser->seats }}</b><br>
-                    <b>Due Date - {{ $bookuser->due_date }}</b>
+                    <p>
+                    <i class="fas fa-bus-alt"></i>  
+                    Carline - {{ $bookuser->carline }}
+                    </p>
+                    <i>
+                    <i class="fas fa-map-marked-alt"></i>
+                    Destination - {{ $bookuser->destination }}
+                    </i><br>
+                    <b>
+                    <i class="fas fa-chair"></i>
+                    Seats Number - {{ $bookuser->seats }}
+                    </b><br>
+                    <b>
+                    <i class="far fa-calendar-alt"></i>
+                    Due Date - {{ $bookuser->due_date }}
+                    </b>
                 </div>
                 <div class="panel-footer">
                     <i>{{ $bookuser->created_at }}</i>

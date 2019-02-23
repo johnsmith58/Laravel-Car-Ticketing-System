@@ -11,6 +11,7 @@
         </div>
     @endif
     <link rel="stylesheet" href="{{ asset('/css/main.css') }}">
+    
     <div class="form">
         <form method="post">
             {{ csrf_field() }}
@@ -20,7 +21,9 @@
         <!-- <input type="hidden" value="{{ Auth::user()->id }}" name="users.id"> -->
 
         <div class="select">
-            <label for="carline">Car Line</label><br>
+            <label for="carline">
+            <i class="fas fa-bus-alt"></i>
+            Car Line</label><br>
                 <select name="carline" class="selectcarline form-control">
 
                     @foreach($userbooks as $carlines)
@@ -30,12 +33,16 @@
                 </select> <!-- selectcarline -->
         </div> <!-- select -->
         <div class="due_date">
-            <label for="due_date">Due Date</label><br>
+            <label for="due_date">
+            <i class="far fa-calendar-alt"></i>
+            Due Date</label><br>
                 <input type="text" name="due_date" id="date" placeholder="YY-MM-DD" class="form-control">
         </div> <!-- due_date -->
 
         <div class="destination">
-            <label for="destination">Destination</label><br>
+            <label for="destination">
+            <i class="fas fa-map-marked-alt"></i>
+            Destination</label><br>
                 <select name="destination" id="" class="form-control">
                     <option value="" disabled>Please Select</option>
                     <option value="Yangon To Manday">Yangon To Manday</option>
@@ -50,7 +57,10 @@
         </div> <!-- destination -->
 
         <div class="seatsNumber">
-            <label for="seatsnumber">Choose Seats Number</label><br>
+            <label for="seatsnumber">
+            <i class="fas fa-chair"></i>
+            Choose Seats Number
+            </label><br>
                 <select name="seats" id="" class="form-control">
                     <option value="" disabled>Please Select</option>
                     <option value="1">Seats Number 1</option>
