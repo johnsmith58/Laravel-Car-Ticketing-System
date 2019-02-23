@@ -1,3 +1,5 @@
+. Create a database with name Laravel
+. Import Laravel.sql
 <p align="center"><a href="https://laravel.com" target="_blank"><img width="150"src="https://laravel.com/laravel.png"></a></p>
 
 <p align="center">
@@ -38,6 +40,3 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
-
-. Create a database with name Laravel
-. Import Laravel.sql
