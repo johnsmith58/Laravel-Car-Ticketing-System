@@ -13,6 +13,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('/css/fontawesome.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('/jquery/jquery-ui.min.css') }}">
 
     <!-- Scripts -->
     <script>
@@ -86,5 +87,12 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('/jquery/jquery.js') }}"></script>
+    <script src="{{ asset('/jquery/jquery-ui.min.js') }}"></script>
+    <script>
+            $(function () {
+                $('#date').datepicker();
+            });
+        </script>
 </body>
 </html>

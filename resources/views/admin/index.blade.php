@@ -4,13 +4,13 @@
 
     <div class="container">
         <div class="ordersTicker">
-            
+            <!-- original -->
             @foreach($bookusers as $bookuser)
             <input type="hidden" value="{{ Auth::user()->id }}" name="user_id">
             <div class="panel panel-info">
 
                 <div class="panel-heading">
-                    <b>{{ $bookuser->name}}</a></b>
+                    <b>{{ $bookuser->user->name }}</a></b>
                 </div>
 
                 <div class="panel-body">

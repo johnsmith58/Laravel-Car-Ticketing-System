@@ -17,7 +17,9 @@ Route::get('/view', 'PostController@view');
 
 
 
-
+Route::get('/admin', 'AdminController@admin')    
+    ->middleware('is_admin')    
+    ->name('admin');
 
 Route::get('/admin', 'BookuserController@index');
 Route::get('post/carlinelist', 'PostController@carlinelist');
